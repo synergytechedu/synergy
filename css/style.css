@@ -54,7 +54,7 @@ section{
 }
 
 h1{
-    font-size:4rem;
+    font-size:clamp(2.5rem,6vw,4.5rem);
     line-height:1.1;
 }
 
@@ -650,6 +650,18 @@ img{
 
 }
 
+.faq-answer{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .3s ease;
+    color:var(--muted);
+    padding:0 20px;
+}
+
+.faq-item.active .faq-answer{
+    padding:0 20px 20px;
+}
+
 /* =========================
    CONTACT
 ========================= */
@@ -734,10 +746,13 @@ footer p{
     }
 
     .navbar{
+        flex-direction:column;
+        gap:15px;
+        text-align:center;
+    }
 
-        flex-wrap:wrap;
-        gap:20px;
-
+    .logo-container{
+        justify-content:center;
     }
 
     .hero-buttons{
@@ -775,9 +790,22 @@ footer p{
 
     .cards-grid{
 
-        grid-template-columns:1fr;
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
 
     }
+
+    .course-card{
+        width:100%;
+    }
+
+    @media(max-width:768px){
+
+        .course-card{
+            padding:30px 20px;
+        }
+
+}
 }
 
 .hidden {
