@@ -183,7 +183,7 @@ if (hero) {
 ===================================== */
 
 const yearElement =
-    document.querySelector(".current-year");
+document.querySelector(".current-year");
 
 if (yearElement) {
 
