@@ -504,6 +504,11 @@ img{
     overflow:hidden;
 
 }
+
+.card{
+    cursor:pointer;
+}
+
 /* =========================
    ROADMAP
 ========================= */
@@ -721,6 +726,36 @@ footer p{
 
 }
 
+.footer-socials{
+
+    margin-top:20px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+.footer-socials a{
+
+    color:var(--muted);
+
+    transition:.3s ease;
+
+    font-weight:500;
+
+}
+
+.footer-socials a:hover{
+
+    color:#E1306C;
+
+    transform:translateY(-2px);
+
+}
+
 /* =========================
    MOBILE
 ========================= */
@@ -859,5 +894,6 @@ footer p{
     );
 
 }
+
 
 
